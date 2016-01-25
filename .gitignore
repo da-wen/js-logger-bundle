@@ -1,0 +1,11 @@
+/phpunit.xml
+/composer.phar
+/vendor/
+/build/
+/node_modules
+artifacts/
+/bin/
+!/bin/.gitkeep
+/docs
+/cache
+composer.lock

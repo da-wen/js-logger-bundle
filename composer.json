@@ -1,0 +1,27 @@
+{
+  "name": "dawen/js-logger-bundle",
+  "type": "symfony-bundle",
+  "description": "A bundle that catches javascript errors and passes them to monolog for Symfony",
+  "keywords": ["javascript", "monolog", "logger", "symfony"],
+  "homepage": "https://github.com/da-wen/js-logger-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Wendlandt",
+      "email": "dan.wendlandt@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/framework-bundle": "~2.3|~3.0",
+    "symfony/monolog-bundle": "~2.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.1"
+  },
+  "autoload": {
+    "psr-0": { "Dawen\\Bundle\\JsLoggerBundle": "" }
+  },
+  "target-dir": "Dawen/Bundle/JsLoggerBundle",
+  "minimum-stability": "stable"
+}

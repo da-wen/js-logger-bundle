@@ -1,0 +1,15 @@
+{
+  "name": "js-logger-bundle",
+  "version": "1.0.0",
+  "description": "Bundle for catching javascript errors and persist them in the backend",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/uglifyjs Resources/public/js/jslogger.js -o Resources/public/js/jslogger.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Wendlandt",
+  "license": "MIT",
+  "dependencies": {
+    "uglify-js": "^2.6.1"
+  }
+}

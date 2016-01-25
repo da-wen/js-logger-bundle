@@ -3,6 +3,7 @@
 This JsLogger Bundle aims to catch error in the frontend and sending them to backend.
 All errors will be handled by a JsLogger Service that persists the log into a channel named *javascript* 
 
+
 ---
 
 ## Credits
@@ -46,6 +47,7 @@ In your twig template you should place the twig method call before all your othe
 
 
 Go ony with configuration section if needed.
+
 
 ---
 

@@ -57,11 +57,12 @@ class JsLogger implements JsLoggerInterface
      */
     public function log($level, $message, array $context = array())
     {
-        if (!$message) {
+        $level = strtolower($level);
+
+        if (!$message || !isset($this->levelToMethod[$level])) {
             return false;
         }
 
-        $level = strtolower($level);
         if (!empty($this->allowedLevels) && !in_array($level, $this->allowedLevels)) {
             return false;
         }

@@ -1,4 +1,6 @@
 # JsLoggerBundle
+[![Build Status](https://travis-ci.org/dawen/js-logger-bundle.svg?branch=master)](https://travis-ci.org/dawen/js-logger-bundle)
+
 
 This JsLogger Bundle aims to catch error in the frontend and sending them to backend.
 All errors will be handled by a JsLogger Service that persists the log into a channel named *javascript* 

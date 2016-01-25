@@ -48,8 +48,8 @@ class JsLoggerTwigExtension extends \Twig_Extension
     public function __construct(UrlGeneratorInterface $router,
                                 Packages $packages,
                                 $isEnabled = true,
-                                array $allowedLevels = [])
-    {
+                                array $allowedLevels = []
+    ) {
         $this->router = $router;
         $this->packages = $packages;
         $this->isEnabled = $isEnabled;
@@ -73,9 +73,9 @@ class JsLoggerTwigExtension extends \Twig_Extension
         $scriptUrl = $this->packages->getUrl(self::ASSET_PATH);
         $allowedLevels = (empty($this->allowedLevels)) ?
             '' :
-            ' data-allowed-levels="'. implode(',', $this->allowedLevels) . '""';
+            ' data-allowed-levels="'. implode(',', $this->allowedLevels) . '"';
 
-        return '<script src="' . $scriptUrl . '" data-backendUrl="' . $backendUrl . '"' . $allowedLevels . '></script>';
+        return '<script src="' . $scriptUrl . '" data-backend-url="' . $backendUrl . '"' . $allowedLevels . '></script>';
     }
 
     public function getName()

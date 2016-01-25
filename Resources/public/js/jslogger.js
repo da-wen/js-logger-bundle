@@ -326,7 +326,7 @@
         }
 
         // Make the HTTP request
-        request(getSetting("endpoint") || getSetting('backendUrl', DEFAULT_BASE_ENDPOINT), payload);
+        request(getSetting("endpoint") || getSetting('backend-url', DEFAULT_BASE_ENDPOINT), payload);
     }
 
     // Generate a browser stacktrace from the current stack.
